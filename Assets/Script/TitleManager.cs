@@ -70,7 +70,8 @@ public class TitleManager : Button_ctr
 
         TitleLogo();
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetButtonDown("Cancel"))
         {
             menu_open = true;
         }
@@ -84,7 +85,8 @@ public class TitleManager : Button_ctr
             MenuClose();
         }
 
-        if (Input.GetKeyDown(KeyCode.Return))
+        //if (Input.GetKeyDown(KeyCode.Return))
+        if(Input.GetButtonDown("Fire1"))
         {
             Invoke(nameof(FadeStart), invokeTime);
         }

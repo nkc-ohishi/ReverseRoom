@@ -67,7 +67,8 @@ public class WarpPoint_ctr : MonoBehaviour
         {
             if (player_touch == true)
             {
-                if (Input.GetKey(KeyCode.UpArrow))
+                // if (Input.GetKey(KeyCode.UpArrow))
+                if(Input.GetAxisRaw("Vertical") > 0f)
                 {
                     now_warp = true;
                 }

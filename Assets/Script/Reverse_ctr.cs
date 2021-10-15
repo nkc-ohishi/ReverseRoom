@@ -70,7 +70,8 @@ public class Reverse_ctr : MonoBehaviour
 
         if (now_Scene == "TitleScene")
         {
-            if (Input.GetKeyDown(KeyCode.Return))
+            //if (Input.GetKeyDown(KeyCode.Return))
+            if(Input.GetButtonDown("Fire1"))
             {
                 audio.Play();
                 title_reverse_check = true;
@@ -118,27 +119,33 @@ public class Reverse_ctr : MonoBehaviour
             rot_check = true;
         }
 
-        if (now_rotato == false && Input.GetKeyDown(KeyCode.RightArrow))
+        // if (now_rotato == false && Input.GetKeyDown(KeyCode.RightArrow))
+        if (now_rotato == false && Input.GetAxisRaw("Horizontal") > 0f )
         {
             rotY_check = true;
             now_rotato = true;
         }
-        if (now_rotato == false && Input.GetKeyDown(KeyCode.LeftArrow))
+        //if (now_rotato == false && Input.GetKeyDown(KeyCode.LeftArrow))
+        if (now_rotato == false && Input.GetAxisRaw("Horizontal") < 0f)
         {
             rotY_check = true;
             now_rotato = true;
         }
-        if (now_rotato == false && Input.GetKeyDown(KeyCode.UpArrow))
+        //if (now_rotato == false && Input.GetKeyDown(KeyCode.UpArrow))
+        if (now_rotato == false && Input.GetAxisRaw("Vertical") > 0f)
         {
             rotX_check = true;
             now_rotato = true;
         }
-        if (now_rotato == false && Input.GetKeyDown(KeyCode.DownArrow))
+        //if (now_rotato == false && Input.GetKeyDown(KeyCode.DownArrow))
+        if (now_rotato == false && Input.GetAxisRaw("Vertical") < 0f)
         {
             rotX_check = true;
             now_rotato = true;
         }
-        if (now_rotato == false && Input.GetKeyDown(KeyCode.Space))
+
+        // if (now_rotato == false && Input.GetKeyDown(KeyCode.Space))
+        if (now_rotato == false && Input.GetButtonDown("Jump"))
         {
             rotZ_check = true;
             now_rotato = true;

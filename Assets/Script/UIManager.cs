@@ -42,13 +42,15 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.Return))
+            //if (Input.GetKeyDown(KeyCode.Return))
+            if(Input.GetButtonDown("Fire1"))
             {
                 Test(StateMode.Stop);
             }
             if (Reverse_ctr.now_rotato == false)
             {
-                if (Input.GetKeyDown(KeyCode.Return))
+                //if (Input.GetKeyDown(KeyCode.Return))
+                if(Input.GetButtonDown("Fire1"))
                 {
                     Test(StateMode.Play);
                 }

@@ -25,7 +25,8 @@ public class CreditManager : MonoBehaviour
     {
         if (credit_pos_y <= 26.5f)
         {
-            if (Input.GetKey(KeyCode.Return))
+            // if (Input.GetKey(KeyCode.Return))
+            if (Input.GetButtonDown("Fire1"))
             {
                 credit_pos_y += 5.0f * Time.deltaTime;
             }

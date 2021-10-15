@@ -48,7 +48,8 @@ public class Block_ctr : MonoBehaviour
 
         if (spin_block == true && Camera_ctr.size_change == false)
         {
-            if(Player_ctr.now_jump == false && Input.GetKeyDown(KeyCode.Space))
+            // if(Player_ctr.now_jump == false && Input.GetKeyDown(KeyCode.Space))
+            if(Player_ctr.now_jump == false && Input.GetButtonDown("Jump"))
             {
                 rot_z_check = true;
             }

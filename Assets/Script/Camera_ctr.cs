@@ -58,7 +58,8 @@ public class Camera_ctr : MonoBehaviour
             }
             else
             {
-                if (Input.GetKeyDown(KeyCode.Return) && cam.orthographicSize <= normal_size)
+                //if (Input.GetKeyDown(KeyCode.Return) && cam.orthographicSize <= normal_size)
+                if (Input.GetButtonDown("Fire1") && cam.orthographicSize <= normal_size)
                 {
                     size_change = true;
                     size_up = true;
@@ -67,7 +68,8 @@ public class Camera_ctr : MonoBehaviour
 
             if (Reverse_ctr.now_rotato == false)
             {
-                if (Input.GetKeyDown(KeyCode.Return) && cam.orthographicSize >= change_size)
+                // if (Input.GetKeyDown(KeyCode.Return) && cam.orthographicSize >= change_size)
+                if (Input.GetButtonDown("Fire1") && cam.orthographicSize >= change_size)
                 {
                     size_down = true;
                 }

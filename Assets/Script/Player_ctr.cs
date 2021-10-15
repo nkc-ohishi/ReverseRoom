@@ -229,13 +229,15 @@ public class Player_ctr : MonoBehaviour
         //プレイヤーの向きを変える
         if (move_x != 0)
         {
+            move_x = (move_x > 0f)? 1f : -1f;
             transform.localScale = new Vector3(move_x, 1, 1);
         }
 
         // ジャンプの処理
         jump = Mathf.Abs(rg2D.velocity.y);
 
-        if (now_jump == false && Input.GetKeyDown(KeyCode.Space))
+        //if (now_jump == false && Input.GetKeyDown(KeyCode.Space))
+        if (now_jump == false && Input.GetButtonDown("Jump"))
         {
             audio.Play();
             rg2D.AddForce(transform.up * jump_Force);
@@ -338,7 +340,8 @@ public class Player_ctr : MonoBehaviour
     {
         anima.SetFloat("SleepFloat", sleep_count);
 
-        if (Input.anyKeyDown)
+        //if (Input.anyKeyDown)
+        if(Input.GetButtonDown("Fire1") || Input.GetButtonDown("Jump") || Input.GetButtonDown("Cancel"))
         {
             sleep_count = 0.0f;
             anima.SetFloat("SleepFloat", 0.0f);
@@ -455,7 +458,8 @@ public class Player_ctr : MonoBehaviour
         {
             if(warp_check2 == false)
             {
-                if (Input.GetKey(KeyCode.UpArrow))
+                // if (Input.GetKey(KeyCode.UpArrow))
+                if(Input.GetAxisRaw("Vertical") > 0f)
                 {
                     warp_check1 = true;
                 }
@@ -465,7 +469,8 @@ public class Player_ctr : MonoBehaviour
         {
             if(warp_check1 == false)
             {
-                if (Input.GetKey(KeyCode.UpArrow))
+                //if (Input.GetKey(KeyCode.UpArrow))
+                if (Input.GetAxisRaw("Vertical") > 0f)
                 {
                     warp_check2 = true;
                 }

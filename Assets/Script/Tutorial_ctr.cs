@@ -42,7 +42,8 @@ public class Tutorial_ctr : MonoBehaviour
             alpha = 0.6f;
         }
 
-        if (Input.GetKeyDown(KeyCode.Return))
+        //if (Input.GetKeyDown(KeyCode.Return))
+        if(Input.GetButtonDown("Fire1"))
         {
             alpha = 0.0f;
         }
