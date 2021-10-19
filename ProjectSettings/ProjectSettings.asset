@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: GPU_RETURNS
   productName: ReverseRoom
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -260,7 +260,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 4b56ccae18638894cb70dbf733b105b3, type: 3}
+      m_Icon: {fileID: 2800000, guid: f79029f781e292e45a80a0fe558fc30c, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -326,7 +326,7 @@ PlayerSettings:
   cameraUsageDescription: 
   locationUsageDescription: 
   microphoneUsageDescription: 
-  switchNMETAOverride: 
+  switchNMETAOverride: nsp/Application.aarch64.lp64.nmeta
   switchNetLibKey: 
   switchSocketMemoryPoolSize: 6144
   switchSocketAllocatorPoolSize: 128
@@ -334,7 +334,7 @@ PlayerSettings:
   switchScreenResolutionBehavior: 2
   switchUseCPUProfiler: 0
   switchUseGOLDLinker: 0
-  switchApplicationID: 0x01004b9000490000
+  switchApplicationID: 0x01004b9000490001
   switchNSODependencies: 
   switchTitleNames_0: 
   switchTitleNames_1: 
