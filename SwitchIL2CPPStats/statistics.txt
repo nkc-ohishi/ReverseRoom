@@ -1,0 +1,255 @@
+----IL2CPP Arguments----
+--convert-to-cpp --enable-array-bounds-check --dotnetprofile=unityaot --compile-cpp --platform=Switch --architecture=ARM64 --configuration=Release --outputpath=C:\Giithub\ReverseRoom\Library/Il2cppBuildCache/Switch\Native\SwitchPlayer.nss --cachedirectory=C:/Giithub/ReverseRoom/Assets/../SwitchIL2CPPCache/il2cpp_cache --linker-flags=-n"C:\Giithub\ReverseRoom\Temp\StagingArea\Application.aarch64.lp64.nmeta" --plugin=C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/PlaybackEngines/Switch/Tools\Il2CppPlugin.dll --additional-include-directories=C:\Program Files\Unity\Hub\Editor\2020.3.5f1\Editor\Data\PlaybackEngines\Switch\Tools/il2cpp\bdwgc/include --additional-include-directories=C:\Program Files\Unity\Hub\Editor\2020.3.5f1\Editor\Data\PlaybackEngines\Switch\Tools/il2cpp\libil2cpp/include --baselib-directory=C:\Program Files\Unity\Hub\Editor\2020.3.5f1\Editor\Data\PlaybackEngines\Switch\Native\release --avoid-dynamic-library-copy --verbose --enable-stats --stats-output-dir=C:/Giithub/ReverseRoom/Assets/../SwitchIL2CPPStats --libil2cpp-static --additional-defines=DEBUGMODE=0,UNITY_RELEASE=1,IL2CPP_USE_SOCKET_MULTIPLEX_IO=1 --configuration=ReleasePlus --additional-cpp=C:/Giithub/ReverseRoom/Library/Il2cppBuildCache/Switch/additionalCppFiles/UnlinkedFunctions.cpp --profiler-report --map-file-parser=C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/Tools/MapFileParser/MapFileParser.exe --directory=C:/Giithub/ReverseRoom/Temp/StagingArea/Managed --generatedcppdir=C:/Giithub/ReverseRoom/Library/Il2cppBuildCache/Switch/il2cppOutput
+
+----Assemblies Converted-----
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\Assembly-CSharp.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\Mono.Security.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\mscorlib.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\System.Configuration.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\System.Core.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\System.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\System.Xml.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\Unity.2D.IK.Runtime.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.AIModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.AndroidJNIModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.AnimationModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.AssetBundleModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.AudioModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.CoreModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.DirectorModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.GridModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.IMGUIModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.InputLegacyModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.InputModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.ParticleSystemModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.Physics2DModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.PhysicsModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.SharedInternalsModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.SpriteShapeModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.SubsystemsModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.SwitchModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.TerrainModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.TextRenderingModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.TilemapModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.UI.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.UIElementsNativeModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.UIModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.UnityWebRequestModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.VFXModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.VideoModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.VRModule.dll
+	C:\Giithub\ReverseRoom\Temp\StagingArea\Managed\UnityEngine.XRModule.dll
+
+----- il2cpp Statistics -----
+General:
+	Conversion Time: 3.422 s
+	Job Count: 8
+	Processor Count: 8
+	Files Written: 181
+	String Literals: 3585
+Methods:
+	Total Methods: 17973
+	Non-Generic Methods: 12857
+	Generic Type Methods: 4039
+	Generic Methods: 1077
+	Shared Methods: 5111
+	Methods with Tail Calls : 0
+Metadata:
+	Total: 1,745.73 kb
+	String Literals: 28.01 kb
+	String Literal Data: 87.34 kb
+	Metadata Strings: 287.82 kb
+	Events: 0.33 kb
+	Properties: 45.90 kb
+	Methods: 442.88 kb
+	Parameter Default Values: 0.50 kb
+	Field Default Values: 44.34 kb
+	Field and Parameter Default Values Data: 67.92 kb
+	Field Marshaled Sizes: 8.18 kb
+	Parameters: 190.43 kb
+	Fields: 111.40 kb
+	Generic Parameters: 5.44 kb
+	Generic Parameter Constraints: 0.17 kb
+	Generic Containers: 4.36 kb
+	Nested Types: 2.05 kb
+	Interfaces: 3.19 kb
+	VTables: 94.30 kb
+	Interface Offsets: 19.01 kb
+	Type Definitions: 212.44 kb
+	Images: 1.48 kb
+	Assemblies: 2.38 kb
+	Field Refs: 0.83 kb
+	Referenced Assemblies: 0.70 kb
+	Attribute Types Ranges: 41.25 kb
+	Attribute Types: 34.45 kb
+	Unresolved Virtual Call Parameter Types: 3.39 kb
+	Unresolved Virtual Call Parameter Ranges: 2.24 kb
+	Windows Runtime type names: 0.00 kb
+	Windows Runtime strings: 0.00 kb
+	Exported Types: 3.02 kb
+Codegen:
+	NullChecks : 0
+Interop:
+	Windows Runtime boxed types : 0
+	Windows Runtime types with names : 0
+	Native to managed interface adapters : 0
+	Array COM callable wrappers : 0
+	COM callable wrappers : 0
+	COM callable wrapper methods that were implemented : 0
+	COM callable wrapper methods that were stripped : 0
+	COM callable wrapper methods that were forwarded to call base class method : 0
+Compilation:
+	Total Files: 251
+	Files Compiled: 36
+	Cache Hits: 215
+	Cache Hit %: 85
+
+
+----Assembly Conversion Times----
+
+----Misc Timing----
+	PreProcessStage: None
+	GenericsCollector.Collect: None
+	WriteGenerics: None
+	AllAssemblyConversion: None
+
+----Generated Files----
+Assembly-CSharp.cpp	758368
+Assembly-CSharp_Attr.cpp	52390
+GenericMethods.cpp	1805838
+GenericMethods1.cpp	2045623
+GenericMethods2.cpp	674593
+Generics.cpp	2014237
+Generics1.cpp	2151024
+Generics2.cpp	1815864
+Generics3.cpp	2641880
+Generics4.cpp	1206704
+Generics5.cpp	2038342
+Il2CppCCalculateFieldValues.cpp	4943584
+Il2CppCCalculateTypeValues.cpp	4816892
+Il2CppCCFieldValuesTable.cpp	126087
+Il2CppCCTypeValuesTable.cpp	232835
+Il2CppCodeRegistration.cpp	6290
+Il2CppGenericAdjustorThunkTable.cpp	203148
+Il2CppGenericComDefinitions.cpp	173
+Il2CppGenericComDefinitions1.cpp	173
+Il2CppGenericComDefinitions10.cpp	173
+Il2CppGenericComDefinitions11.cpp	173
+Il2CppGenericComDefinitions12.cpp	173
+Il2CppGenericComDefinitions13.cpp	173
+Il2CppGenericComDefinitions14.cpp	173
+Il2CppGenericComDefinitions15.cpp	173
+Il2CppGenericComDefinitions16.cpp	173
+Il2CppGenericComDefinitions17.cpp	173
+Il2CppGenericComDefinitions2.cpp	173
+Il2CppGenericComDefinitions3.cpp	173
+Il2CppGenericComDefinitions4.cpp	173
+Il2CppGenericComDefinitions5.cpp	173
+Il2CppGenericComDefinitions6.cpp	173
+Il2CppGenericComDefinitions7.cpp	173
+Il2CppGenericComDefinitions8.cpp	173
+Il2CppGenericComDefinitions9.cpp	173
+Il2CppGenericMethodPointerTable.cpp	1256290
+Il2CppInteropDataTable.cpp	149798
+Il2CppInvokerTable.cpp	2277291
+Il2CppReversePInvokeWrapperTable.cpp	2456
+Mono.Security.cpp	140224
+Mono.Security_Attr.cpp	32922
+mscorlib.cpp	2233638
+mscorlib_Attr.cpp	864683
+mscorlib1.cpp	2232708
+mscorlib10.cpp	2264569
+mscorlib11.cpp	1556840
+mscorlib12.cpp	1652628
+mscorlib13.cpp	2201565
+mscorlib14.cpp	1947653
+mscorlib15.cpp	2007299
+mscorlib16.cpp	1715708
+mscorlib2.cpp	2095085
+mscorlib3.cpp	1644220
+mscorlib4.cpp	2134650
+mscorlib5.cpp	1951304
+mscorlib6.cpp	2161182
+mscorlib7.cpp	2049326
+mscorlib8.cpp	1821584
+mscorlib9.cpp	2337309
+System.Configuration.cpp	49703
+System.Configuration_Attr.cpp	47897
+System.Core.cpp	21471
+System.Core_Attr.cpp	54589
+System.cpp	1283717
+System.Xml.cpp	5666
+System.Xml_Attr.cpp	52406
+System_Attr.cpp	88216
+System1.cpp	1464215
+System2.cpp	621388
+Unity.2D.IK.Runtime.cpp	379657
+Unity.2D.IK.Runtime_Attr.cpp	51661
+UnityEngine.AIModule.cpp	23322
+UnityEngine.AIModule_Attr.cpp	87879
+UnityEngine.AndroidJNIModule.cpp	586208
+UnityEngine.AndroidJNIModule_Attr.cpp	142236
+UnityEngine.AnimationModule.cpp	253663
+UnityEngine.AnimationModule_Attr.cpp	169871
+UnityEngine.AssetBundleModule.cpp	38424
+UnityEngine.AssetBundleModule_Attr.cpp	79675
+UnityEngine.AudioModule.cpp	84548
+UnityEngine.AudioModule_Attr.cpp	128051
+UnityEngine.CoreModule.cpp	2349601
+UnityEngine.CoreModule_Attr.cpp	926051
+UnityEngine.CoreModule1.cpp	1608568
+UnityEngine.cpp	3258
+UnityEngine.DirectorModule.cpp	22009
+UnityEngine.DirectorModule_Attr.cpp	84263
+UnityEngine.GridModule.cpp	5237
+UnityEngine.GridModule_Attr.cpp	92818
+UnityEngine.IMGUIModule.cpp	766794
+UnityEngine.IMGUIModule_Attr.cpp	188263
+UnityEngine.InputLegacyModule.cpp	144720
+UnityEngine.InputLegacyModule_Attr.cpp	93486
+UnityEngine.InputModule.cpp	49811
+UnityEngine.InputModule_Attr.cpp	81210
+UnityEngine.ParticleSystemModule.cpp	73391
+UnityEngine.ParticleSystemModule_Attr.cpp	123656
+UnityEngine.Physics2DModule.cpp	199094
+UnityEngine.Physics2DModule_Attr.cpp	162118
+UnityEngine.PhysicsModule.cpp	155029
+UnityEngine.PhysicsModule_Attr.cpp	159636
+UnityEngine.SharedInternalsModule.cpp	174814
+UnityEngine.SharedInternalsModule_Attr.cpp	144089
+UnityEngine.SpriteShapeModule.cpp	4704
+UnityEngine.SpriteShapeModule_Attr.cpp	84161
+UnityEngine.SubsystemsModule.cpp	124886
+UnityEngine.SubsystemsModule_Attr.cpp	96872
+UnityEngine.SwitchModule.cpp	90803
+UnityEngine.SwitchModule_Attr.cpp	121843
+UnityEngine.TerrainModule.cpp	270521
+UnityEngine.TerrainModule_Attr.cpp	106222
+UnityEngine.TextRenderingModule.cpp	207347
+UnityEngine.TextRenderingModule_Attr.cpp	103285
+UnityEngine.TilemapModule.cpp	95182
+UnityEngine.TilemapModule_Attr.cpp	117431
+UnityEngine.UI.cpp	2329086
+UnityEngine.UI_Attr.cpp	342953
+UnityEngine.UI1.cpp	1523780
+UnityEngine.UI2.cpp	1863814
+UnityEngine.UI3.cpp	1446753
+UnityEngine.UIElementsNativeModule.cpp	105883
+UnityEngine.UIElementsNativeModule_Attr.cpp	99953
+UnityEngine.UIModule.cpp	220024
+UnityEngine.UIModule_Attr.cpp	121310
+UnityEngine.UnityWebRequestModule.cpp	60685
+UnityEngine.UnityWebRequestModule_Attr.cpp	78252
+UnityEngine.VFXModule.cpp	92911
+UnityEngine.VFXModule_Attr.cpp	126287
+UnityEngine.VideoModule.cpp	85955
+UnityEngine.VideoModule_Attr.cpp	113739
+UnityEngine.VRModule.cpp	18798
+UnityEngine.VRModule_Attr.cpp	81233
+UnityEngine.XRModule.cpp	259400
+UnityEngine.XRModule_Attr.cpp	146001
+UnityEngine_Attr.cpp	10954
+UnlinkedFunctions.cpp	575
+UnresolvedVirtualCallStubs.cpp	300008
+
