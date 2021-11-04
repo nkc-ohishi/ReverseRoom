@@ -18,9 +18,13 @@ public class TitleManager : Button_ctr
 
     [Header("TitleLogoを入れる")]
     [SerializeField] GameObject title;
+    [SerializeField] GameObject nintendo_Logo;
+    [SerializeField] GameObject pushA;
 
     float title_pos_y;
     float alpha;
+    float logo_rot_y;
+    float logo_alpha;
 
     float panel_rot_Y;
     float menu_rot_Z;
@@ -30,6 +34,8 @@ public class TitleManager : Button_ctr
     bool menu_open;
     bool menu_close;
 
+    public static bool title_start;
+
     float invokeTime = 1.2f;
     float load_time = 0.5f;
 
@@ -38,6 +44,8 @@ public class TitleManager : Button_ctr
     {
         alpha = 0.0f;
         title_pos_y = 0.0f;
+        logo_alpha = 0.0f;
+        logo_rot_y = 0.0f;
 
         panel_rot_Y = 90.0f;
         menu_rot_Z = 45.0f;
@@ -48,6 +56,9 @@ public class TitleManager : Button_ctr
         menu_open = false;
         menu_close = false;
 
+        title_start = false;
+
+        pushA.SetActive(false);
         m_MenuPanel.SetActive(false);
 
         m_Menu.rectTransform.eulerAngles = new Vector3(0.0f, 0.0f, menu_rot_Z);
@@ -58,6 +69,8 @@ public class TitleManager : Button_ctr
 
         title.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, alpha);
         title.transform.position = new Vector3(0.0f, title_pos_y, 0.0f);
+        nintendo_Logo.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, logo_alpha);
+        nintendo_Logo.transform.eulerAngles = new Vector3(0.0f, logo_rot_y, 0.0f);
     }
 
     // Update is called once per frame
@@ -68,16 +81,20 @@ public class TitleManager : Button_ctr
             m_List1.Select();
         }
 
-        TitleLogo();
+        if(Fade_ctr.fade == false)
+        {
+            TitleLogo();
+        }
 
         //if (Input.GetKeyDown(KeyCode.Escape))
-        if(Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonDown("Cancel"))
         {
             menu_open = true;
         }
 
         if (menu_open == true)
         {
+            title_start = false;
             OpenMenu();
         }
         if(menu_close == true)
@@ -85,10 +102,13 @@ public class TitleManager : Button_ctr
             MenuClose();
         }
 
-        //if (Input.GetKeyDown(KeyCode.Return))
-        if(Input.GetButtonDown("Fire1"))
+        if(title_start == true)
         {
-            Invoke(nameof(FadeStart), invokeTime);
+            //if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetButtonDown("Fire1"))
+            {
+                Invoke(nameof(FadeStart), invokeTime);
+            }
         }
     }
 
@@ -112,10 +132,26 @@ public class TitleManager : Button_ctr
             {
                 title_pos_y += 0.7f * Time.deltaTime;
             }
+            if(title_pos_y >= 1.0f)
+            {
+                title_pos_y = 1.0f;
+                logo_alpha += Time.deltaTime;
+                logo_rot_y += 360.0f * Time.deltaTime;
+                if(logo_rot_y >= 360.0f)
+                {
+                    logo_alpha = 1.0f;
+                    logo_rot_y = 360.0f;
+                    pushA.SetActive(true);
+                    title_start = true;
+                    Fade_ctr.fade = true;
+                }
+            }
         }
 
         title.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, alpha);
         title.transform.position = new Vector3(0.0f, title_pos_y, 0.0f);
+        nintendo_Logo.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, logo_alpha);
+        nintendo_Logo.transform.eulerAngles = new Vector3(0.0f, logo_rot_y, 0.0f);
     }
 
     void OpenMenu()
@@ -175,6 +211,7 @@ public class TitleManager : Button_ctr
                         m_MenuPanel.SetActive(false);
                         menu_close = false;
                         now_button_select = false;
+                        title_start = true;
                     }
                 }
             }

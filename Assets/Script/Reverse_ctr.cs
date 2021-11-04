@@ -70,11 +70,14 @@ public class Reverse_ctr : MonoBehaviour
 
         if (now_Scene == "TitleScene")
         {
-            //if (Input.GetKeyDown(KeyCode.Return))
-            if(Input.GetButtonDown("Fire1"))
+            if(TitleManager.title_start == true)
             {
-                audio.Play();
-                title_reverse_check = true;
+                //if (Input.GetKeyDown(KeyCode.Return))
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    audio.Play();
+                    title_reverse_check = true;
+                }
             }
         }
         else

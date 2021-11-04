@@ -39,7 +39,7 @@ public class Tutorial_ctr : MonoBehaviour
     {
         if (cam.orthographicSize >= 8.0f)
         {
-            alpha = 0.6f;
+            alpha = 0.7f;
         }
 
         //if (Input.GetKeyDown(KeyCode.Return))

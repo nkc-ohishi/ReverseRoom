@@ -62,12 +62,15 @@ public class GameManager : Button_ctr
     void Update()
     {
         //if (Input.GetKeyDown(KeyCode.Escape))
-        if(Input.GetButtonDown("Cancel"))
+        if(now_button_select == false)
         {
-            menu_open = true;
+            if (menu_close == false && Input.GetButtonDown("Cancel"))
+            {
+                menu_open = true;
+            }
         }
 
-        if(menu_close == false && menu_open == true)
+        if (menu_open == true)
         {
             now_button_select = true;
             OpenMenu();
