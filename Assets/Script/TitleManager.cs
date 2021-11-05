@@ -225,6 +225,11 @@ public class TitleManager : Button_ctr
         m_Back.color = new Color(1.0f, 1.0f, 1.0f, button_alpha);
     }
 
+    public void OpenOption()
+    {
+
+    }
+
     public void Back()
     {
         Time.timeScale = 1.0f;

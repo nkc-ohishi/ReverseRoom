@@ -33,6 +33,8 @@ public class GameManager : Button_ctr
     // Start is called before the first frame update
     void Start()
     {
+        now_button_select = false;
+
         panel_rot_Y = 90.0f;
         menu_rot_Z = 45.0f;
 
@@ -67,12 +69,12 @@ public class GameManager : Button_ctr
             if (menu_close == false && Input.GetButtonDown("Cancel"))
             {
                 menu_open = true;
+                now_button_select = true;
             }
         }
 
         if (menu_open == true)
         {
-            now_button_select = true;
             OpenMenu();
         }
 
